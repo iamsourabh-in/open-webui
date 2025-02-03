@@ -1,3 +1,4 @@
+```sh
 # Setup Ollama
 
 # Pull the required model
@@ -31,3 +32,5 @@ pip install -r requirements.txt -U
 # Start Server
 cd ./backend
 bash start.sh
+
+```
