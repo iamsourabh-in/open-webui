@@ -20,6 +20,20 @@ source ~/miniconda3/bin/activate
 conda create --name openwebui python=3.11 -y
 conda activate openwebui
 
+# Download and install nvm:
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+
+# Download and install Node.js:
+nvm install 22
+
+# Verify the Node.js version:
+node -v # Should print "v22.13.1".
+nvm current # Should print "v22.13.1".
+
+# Verify npm version:
+npm -v # Should print "10.9.2".
+
+
 # Install frontend dependencies at the root folder of repo
 cd open-webui-main
 npm install
